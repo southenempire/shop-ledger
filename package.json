@@ -1,0 +1,14 @@
+{
+  "name": "shop-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Voice-note sales ledger for small shops. Speech-to-text runs on-device with QVAC.",
+  "scripts": {
+    "ledger": "node src/cli.mjs",
+    "bot": "node src/bot.mjs",
+    "test": "node --test"
+  },
+  "engines": { "node": "22.21.x" },
+  "dependencies": { "@qvac/sdk": "0.22.0" }
+}
