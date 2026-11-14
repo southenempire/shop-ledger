@@ -29,6 +29,13 @@ voice note (Telegram) -> ffmpeg -> QVAC Whisper (on-device) -> rule-based parser
 - **Nothing is saved without a tap on Save.** Unknown items are reported instead of guessed, and
   overselling is flagged with a warning.
 
+### Offline check
+
+Speech-to-text was tested with all outbound internet blocked (a macOS `sandbox-exec` profile with
+`deny network-outbound`), using the command line and a synthetic voice. The model loaded from cache,
+and the transcript and stock preview were correct. The Telegram bot still needs the internet,
+because messages travel through Telegram's servers. This was not tested with real voices.
+
 ## Requirements
 
 - Node.js 22.21.x
