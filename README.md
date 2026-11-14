@@ -131,10 +131,19 @@ Telegram test used a real voice note.
   to @BotFather.
 - `data/` (the sales log and the owner id) is also git-ignored.
 
-## Ideas for later
+## Roadmap
 
-WhatsApp support, several shops, price changes by voice, weekly reports, and a local language
-model for phrasing the summaries.
+None of this is built yet. It is the plan.
+
+1. **Better speech accuracy.** Compare more QVAC speech models (multilingual Whisper, Parakeet) on
+   real recordings, and add sound-alike matching for item names.
+2. **More languages.** Word packs for numbers, units and verbs, so other languages work beyond English.
+3. **WhatsApp**, to reach more traders.
+4. **Payments.** Let a customer pay in a stablecoin from the same chat, with the ledger matching each
+   payment to a sale. The sales log already stores each sale's total and source, so a payment status
+   is a small addition. Tether's Wallet Development Kit (WDK) is the planned route.
+5. **Smaller improvements.** Several shops, price changes by voice, weekly reports, and a local
+   language model to phrase the daily summary.
 
 ## License
 
